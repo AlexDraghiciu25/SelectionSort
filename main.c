@@ -16,7 +16,7 @@ void Selection_Sort(int v[], int n)
             printf("%d ", v[i]);
         printf("\n");
 
-        int minim = v[poz], poz_min = poz;
+        int minim = v[poz], poz_min = poz;    //la fel de bine rula si pentru poz_min = 0;
         for (int i = poz + 1; i < n; i++)
             if (v[i] < minim)
             {
@@ -34,4 +34,5 @@ int main()
     Selection_Sort(v, 5);
 
     return 0;
+
 }
